@@ -1,5 +1,5 @@
 <!DOCTYPE HTML>
-  <html>
+<html>
   <script>
     alert("Hello, World this is an alert box!");
     function My_First_Function() {
@@ -8,5 +8,5 @@
       document.getElementById("Irish").innerHTML = 
       result; 
   }
-</script>
+  </script>
 </html>
