@@ -1,1 +1,57 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>My One-Page Website</title>
+  </head>
+  <body>
+    <nav>
+      <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#pictures">Pictures</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+    
+    <section id="home">
+      <h1>Welcome to My Website</h1>
+      <p>This is the home page section. Here you can introduce your website and provide some information about what visitors can expect to find.</p>
+    </section>
+    
+    <section id="pictures">
+      <h2>'THE' Gym Pictures</h2>
+      <p>Here are some pictures of the GYM <p>
+      <img src="./Images/Gym/Gym1.png" alt="Description of image 1">
+      <img src="./Images/Gym/Gym2.png" alt="Description of image 2">
+      <img src="./Images/Gym/Gym3.png" alt="Description of image 3">
+	  <img src="./Images/Gym/Gym4.png" alt="Description of image 4">
+    </section>
+    
+    <section id="contact">
+      <h2>Contact Me</h2>
+      <p>If you have any questions or comments, please fill out the form below:</p>
+      <form action="submit-form.php" method="POST">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required>
+        
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+        
+        <label for="message">Message:</label>
+        <textarea id="message" name="message" rows="5" required></textarea>
+        
+        <button type="submit">Send</button>
+      </form>
+    </section>
+    
+    <section id="video">
+      <h2>Watch My Video</h2>
+      <p>Here's a video I made of my trip:</p>
+      <iframe src="></iframe>
+    </section>
+    
+    <footer>
+      <p>Copyright © 2023 My One-Page Website.
+    </footer>
+  </body>
+</html>
 
