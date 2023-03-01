@@ -33,7 +33,7 @@ h1 {
 /* SELECT ALL SQUARES PARAGRAPHS in ARRAY */
 
 .squares:nth-child(-n+4) p{
-    font-family: "Helvetica Neue", Arial, Helvetica, sans-serif;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
     font-size: 1.5cm;
     font-weight: 900;
     text-align: center;
