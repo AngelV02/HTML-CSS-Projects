@@ -29,3 +29,20 @@ h1 {
    border-radius: 25%;
    cursor:pointer;
 }
+
+/* SELECT ALL SQUARES PARAGRAPHS in ARRAY */
+
+.squares:nth-child(-n+4) p{
+    font-family: "Helvetica Neue", Arial, Helvetica, sans-serif;
+    font-size: 1.5cm;
+    font-weight: 900;
+    text-align: center;
+    margin: 0;
+    text-shadow: 2px 1px 4px rgba(0,0,0, 0.8);
+}
+
+/******** INDIVIDUALY SELECT A SQAURE IN ARRAY ***/
+
+.squares:nth-child(1) {
+    
+}
