@@ -68,3 +68,8 @@ body {
     display: block;
     color: #b3b3b3;
 }
+
+.submemu li:hover {
+    color: #fff;
+    background-color: #5EAFDF;
+}
