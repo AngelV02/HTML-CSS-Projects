@@ -53,7 +53,7 @@ body {
     visibility: visible;
 }
 
-.submemu {
+.submenu {
     padding: 0;
     left: 0;
     position: absolute;
@@ -63,13 +63,13 @@ body {
     visibility: hidden;
 }
 
-.submemu li {
+.submenu li {
     background-color: #387593;
     display: block;
     color: #b3b3b3;
 }
 
-.submemu li:hover {
+.submenu li:hover {
     color: #fff;
     background-color: #5EAFDF;
 }
