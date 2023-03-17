@@ -10,10 +10,16 @@
 
     <div>
 
+        <!-- Navigation bar with blue background -->
         <nav class="navbar navbar-expand-lg bg-info">
 
+            <!-- Full-width container for the navigation bar -->
             <div class="container-fluid">
+
+               <!-- Collapsible section for navigation links on smaller screens -->
               <div class="collapse navbar-collapse" id="navbarSupportedContent">
+
+                <!-- Unordered list of navigation items, aligned left with margin -->
                 <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                   <li class="nav-item active">
                     <a class="nav-link active text-light" aria-current="page" href="#about">About</a>
@@ -25,13 +31,19 @@
                     <a class="nav-link text-light " href="#text-center" >Deals</a>
                   </li>
                 </ul>
+
+                <!-- Search form aligned to the right of the navigation bar -->
                 <form class="d-flex" role="search">
+
+                   <!-- Search input box with margin on the right -->
                   <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+
+                   <!-- Search button with blue background and white text -->
                   <button class="btn btn-primary text-light" type="submit">Search</button>
                 </form>
               </div>
             </div>
-          </nav>
+        </nav>
 
           <div class="jumbotron jumbotron-fluid bg-info text-center">
             <div class="container">
@@ -79,9 +91,17 @@
           <!--ShowTimes-->
 
         <section id="showtimes"> 
+
+          <!-- A container to hold the movie showtimes and details -->
           <div class="container my-5">
+
+            <!-- A header for the section -->
             <h2>Showtimes:</h2>
+
+             <!-- A row to align the movie cards in the center -->
             <div class="row justify-content-center">
+
+              <!-- A column to display information about the first movie -->
               <div class="col-sm-4 mb-3">
                 <div class="card h-100">
                   <img class="card-img-top" src="./Img/kongskullisland.jpg" alt="Card image cap">
@@ -99,7 +119,7 @@
                 </div>
               </div>
 
-
+              <!-- A column to display information about the second movie -->
               <div class="col-sm-4 mb-3">
                 <div class="card h-100">
                   <img class="card-img-top" src="./Img/ghostintheshell.jpg" alt="Card image cap">
@@ -118,7 +138,7 @@
                 </div>
               </div>
 
-
+               <!-- A column to display information about the third movie -->
               <div class="col-sm-4 mb-3">
                 <div class="card h-100">
                   <img class="card-img-top" src="./Img/beautyandthebeast.jpg" alt="Card image cap">
@@ -139,10 +159,25 @@
           </div>
         </section>
           
-          
-
           <!--End ShowTimes-->
 
+        <!--Jumbotron heading-->
+        <div class="jumbotron jumbotron-fluid bg-info mt-5 text-center">
+          <div class="container">
+
+            <h1 class="display-4 hidden-sm-down" style="color: #fff; font-family:roboto; font-weight:900;text-transform:uppercase;">
+            Movie deals</h1>
+            <p class="lead">Check out our monthly deals...</p>
+
+            <!--Movie deals-->
+            <button type="button" class="btn btn-outline-primary" data-toggle="modal" data-target="#register">See our monthly movie deals!</button>
+            <!--End Moive Deals-->
+
+          </div>
+        </div>
+        <!--End of Jumbotron Heading-->
+
+          <!--Sign Up Form -->
         <section id="text-center">
           <div class="text-center" >
             <form>
@@ -150,10 +185,78 @@
                 <div class="form-group">
                   <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
                 </div> 
-                <button type="submit" class="btn btn-primary">Submit</button>
+                <button type="button" class="btn btn-secondary btn-info popover-dismiss" data-container="body" data-toggle="popover" data-placement="top" data-content="Submit your email to recieve great movie rewards!">
+                  Sign Up!</button>
               </form>
           </div>
+          <!--End of Sign up-->
 
+          <!--Form modal-->
+            <div class="modal" id="register" tabindex="-1">
+              <div class="modal-dialog">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h5 class="modal-title">Register to recieve movie rewards!</h5>
+
+                    <!-- Close button -->
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                      <span aria-hidden="true">&times;</span>
+                    </button>
+                  </div>
+
+                  <!-- Modal body -->
+                  <div class="modal-body">
+                  
+                    <!-- User registration form -->
+                    <form>
+
+                       <!-- First name input field -->
+                      <div class="form-group">
+                        <label for="Firstname" >First Name:</label>
+                        <div class="col-sm-10">
+                          <input type="text" class="form-control" id="firstname" placeholder="First name...">
+                        </div>
+                      </div>
+
+                      <!-- Last name input field -->
+                      <div class="form-group">
+                        <label for="Lastname">Last Name:</label>
+                        <div class="col-sm-10">
+                          <input type="text" class="form-control" id="lastname" placeholder="Last name...">
+                        </div>
+
+                      <!-- Email input field -->
+                      <div class="form-group ">
+                        <label for="Email">Email:</label>
+                        <div class="col-sm-10">
+                          <input type="email" class="form-control" id="email" placeholder="Email...">
+                      </div>
+
+                      <!-- Password input field -->
+                      <div class="form-group">
+                        <label for="Password">Password</label>
+                        <div class="col-sm-10">
+                          <input type="password" class="form-control" id="password" placeholder="Password...">
+                      </div>
+
+                      </div>
+                    </form>
+
+                  </div>
+
+                  <!-- Modal footer -->
+                  <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-primary">Save changes</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+          <!--End of form modal-->
+
+
+          <!--Footer-->
           <div class="container my-5">
             <ul class="nav nav-inline">
                 <li class="nav-item">
@@ -170,11 +273,21 @@
                 </li>
             </ul>
           </div>
+
+          <!--End of Footer-->
         </section>
 
 
     </div>
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.min.js" integrity="sha384-+sLIOodYLS7CIrQpBjl+C7nPvqq+FbNUBDunl/OZv93DB7Ln/533i8e/mZXLi/P+" crossorigin="anonymous"></script>
+
+    <script>
+      $('.popover-dismiss').popover({
+        trigger: 'focus'
+      })
+    </script>
   </body>
 </html>
